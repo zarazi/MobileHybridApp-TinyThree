@@ -23,19 +23,23 @@
 <script type="text/x-handlebars-template" 
         id="tweet-template">
         <li>
-            <img src="{{profile_image_url}}" class="ui-li-thumb ui-li-aside" alt="{{text}}">      
+            <img src="{{profile_image_url}}" class="ui-li-thumb ui-li-aside" alt="{{text}}" />
+            <span style="color:#888888;">{{from_user}}</span><br>
+            <span>{{text}}</span>
+            <span class="ui-li-aside" style="color:#AAAAAA;">{{timeAgo}}</span>       
         </li>
 </script>
 
 <script type="text/x-handlebars-template" 
         id="flickr-template">
-        <img src="http://a0.twimg.com/profile_images/651575553/twittergithub2.png" style = "width:120px; height:120px;"> 
+        <img src="{{media.m}}" style="width:120px; height:120px"> 
 </script>
 
 <script type="text/x-handlebars-template" 
         id="weather-template">
         <li>
             <img src="{{iconUrl}}" class="ui-li-thumb ui-li-aside" />
+            <span>{{dayOfWeek}}</span>
         </li>
 </script>
        
